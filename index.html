@@ -1,0 +1,15 @@
+<!doctype html><html lang="ru"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0B1220">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<title>T-Budget</title>
+<link rel="stylesheet" href="style.css"></head>
+<body><div class="phone"><header><div><small>Добро пожаловать</small><h1>Гусейн</h1></div><div class="avatar">₽</div></header>
+<section class="hero"><div class="top"><div><small>Цель</small><h2>250 000 ₽</h2></div><div><small>Накоплено</small><b id="savedText">0 ₽</b></div></div>
+<div class="ringWrap"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" class="bg"/><circle id="ring" cx="60" cy="60" r="52" class="fg"/></svg><div class="center"><div id="pct">0%</div><small>до цели</small></div></div>
+<div class="buttons"><button onclick="salary(15)">Получил 15</button><button class="ghost" onclick="salary(30)">Получил 30</button></div></section>
+<section class="grid"><div class="card"><small>На жизнь</small><b id="life">13 000 ₽</b><span>867 ₽/день</span></div><div class="card"><small>Осталось</small><b id="remain">250 000 ₽</b><span id="eta">9 выплат</span></div></section>
+<section class="card full"><h3>Конверты</h3><div class="row"><span>🏠 Аренда</span><b id="rent">0 ₽</b></div><div class="row"><span>📄 Кредиты</span><b id="credit">0 ₽</b></div><div class="row"><span>🐷 Копилка</span><b id="piggy">0 ₽</b></div></section>
+<section class="card full"><h3>Последние операции</h3><div id="feed"><div class="muted">Пока нет операций</div></div></section>
+<nav><a class="active">🏠</a><a>📊</a><a>🎯</a><a>👤</a></nav></div><script src="app.js"></script></body></html>
